@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <script>
+        function ingredientsHover() {
+            document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize = '300%';
+        }
+
+
+        function ingredientsNormal() {
+            document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize = '100';
+            // document.write("Normal");
+        }
+
+
+        function preparationHover() {
+            document.getElementById('preparation').firstElementChild.firstElementChild.style.fontSize = '300%';
+        }
+
+
+        function preparationNormal() {
+            document.getElementById('preparation').firstElementChild.firstElementChild.style.fontSize = '100%';
+        }
+    </script>
+  <body>
+     <div id="container">
+    <header>
+       <h1>How to make iced coffee</h1>
+     <img src="https://i.imgur.com/GOmLCGP.png?1">
+       <p>
+         You'll be pleased to hear the ingredients you'll need are fairly straightforward and simple, and there aren't that many.
+       </p>
+   </header>
+   <section  id="ingredients"  onmouseover="ingredientsHover()"  onmouseout="ingredientsNormal()">
+     <h2>
+     ingredients <i class="fa fa-book" aria-hidden="true"></i>
+     </h2>
+     <ul>
+       <li>
+         coffee (obviously)
+       </li>
+       <li>
+         milk
+         </li>
+         <li>
+           ice cubes
+         </li>
+         <li>
+           sugar (if you want a sweeter edge to your drink)
+           </li>
+           <li>
+             a container to let it cool in and one to serve in
+           </li>
+
+     </ul>
+   </section>
+   <section id="preparation" onmouseover="preparationHover()"  onmouseout="preparationNormal()">
+     <h2>
+     preparation <i class="fa fa-check" aria-hidden="true"></i>
+     </h2>
+     <ol>
+       <li>
+         Pour a cup of freshly brewed coffee into a blender, adding some crushed ice cubes and around about a quarter of a cup of milk (for one serving).
+       </li>
+       <li>
+         Add any flavourings if you want to and then blend until thick, around 8-12 seconds.
+       </li>
+       <li>
+         Serve in a lovely glass and enjoy!
+       </li>
+     </ol>
+   </section>
+   <footer>
+       <p>Copyright © 2024 Stojna Gjorgjievska. All Rights Reserved.</p>
+    </footer>
+    </div>
+
+  </body>
+</html>
